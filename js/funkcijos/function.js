@@ -100,7 +100,7 @@ console.log(words('labas', 'rytas', 'Lietuva'));
 const Mantai = 'Mantas';
 
 function vardas(name){
-    return console.log(`Labas ${name}`)
+    return console.log(`Labas ${name}`);
 }
 
 vardas('Mantas');

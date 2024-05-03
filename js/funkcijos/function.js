@@ -96,3 +96,17 @@ function words(w1, w2,w3){
 }
 
 console.log(words('labas', 'rytas', 'Lietuva'));
+
+const Mantai = 'Mantas';
+
+function vardas(name){
+    return console.log(`Labas ${name}`)
+}
+
+vardas('Mantas');
+
+function howMany(text){
+    return console.log(text.length) //grazina texto ilgi
+}
+
+howMany('Labas');

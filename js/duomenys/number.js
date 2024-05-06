@@ -10,12 +10,11 @@ NUMBERS
     - NaN (not-a-number) error
 
 Matematiniai operatoriai:
-- aritmetiniai: +, -, /, *, **, %
-** laipsnis
-% liekana
- kumotituvo principas
- - priskyrimo +=, -=, /=, *=, **=, %=
-
+    - aritmetiniai: +, -, /, *, **, %, ++, --
+    ** laipsnis
+    % liekana
+    - priskyrimo +=, -=, /=, *=, **=, %=
+    ++, --
 */
 
 // kintamieji const(tipas)
@@ -118,3 +117,33 @@ console.log(y);
 
 y -= 5 * 4; // (5*4)=40-20=20
 console.log(y);
+
+console.clear();
+
+let makaronai = 2;
+console.log(makaronai);
+
+makaronai += 2;
+console.log(makaronai);
+
+makaronai += 1;
+console.log(makaronai);
+
+makaronai ++;//prideda praeita apibrezta kieki (+1)
+console.log(makaronai);
+
+makaronai --;// atima 1
+console.log(makaronai);
+
+++makaronai;
+makaronai++;
+makaronai++;
+++makaronai;
+console.log(makaronai);
+
+console.clear();
+
+let g = 6;
+console.log(g);//6
+console.log(g++);//6 nes ++ uz kintamojo vyksta po panaudojimo, pirmiau spausdina poto padidina
+console.log(++g);// pirmiau padidina po to spausdina

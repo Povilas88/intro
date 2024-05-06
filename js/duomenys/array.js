@@ -47,7 +47,7 @@ let sum3 = 0;
 let index = 0; //index pozicijos numeris
 
 //index = 0 - > 1,......
-sum3 += marks[index++];//++index pradetu nuo 2 pozicijos
+sum3 += marks[index++]; //(++index) pradetu nuo 2 pozicijos, pirmiau padidina po to spausdina, index++ spausdina poto padidina
 sum3 += marks[index++];
 sum3 += marks[index++];
 sum3 += marks[index++];

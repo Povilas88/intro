@@ -6,7 +6,10 @@
   "scripts": {
     "array": "node --watch ./js/duomenys/array.js",
     "if": "node --watch ./js/palyginimas/if.js",
-    "elseiffunction": "node --watch ./js/funkcijos/elseiffunction.js",
+    "jsmini-nd": "node --watch ./js/nd/jsmini-nd.js",
+    "elseif-nd": "node --watch ./js/nd/elseif-nd.js",
+    "piniginestring-nd": "node --watch ./js/nd/piniginestring-nd.js",
+    "boolean-nd": "node --watch ./js/nd/boolean-nd.js",
     "function": "node --watch ./js/funkcijos/function.js",
     "boolean": "node --watch ./js/duomenys/boolean.js",
     "string": "node --watch ./js/duomenys/string.js", 

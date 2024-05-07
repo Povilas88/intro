@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "for": "node --watch ./js/ciklai/for.js",
     "name-date-nd": "node --watch ./js/nd/name-date-nd.js",
     "array": "node --watch ./js/duomenys/array.js",
     "if": "node --watch ./js/palyginimas/if.js",

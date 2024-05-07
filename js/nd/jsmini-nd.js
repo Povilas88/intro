@@ -11,6 +11,7 @@ Sukurti 3 sąrašo tipo kintamuosius su penkiomis teksto tipo reikšmėmis
     Po kiekvieno jų inicijavimo, išvesti į console
 */
 console.log('Kintamųjų inicijavimas');
+console.log();
 
 const a = 1;
 console.log(a);
@@ -52,32 +53,33 @@ Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pa
     Rezultatą išvesti į console
 Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
 */
-
+console.log();
 console.log('Veiksmai su kintamaisiais');
+console.log();
 
 let index = 0;
 let sum1 = 0;
-    sum1 += sarasas1[index++];
-    sum1 += sarasas1[index++];
-    sum1 += sarasas1[index++];
-    sum1 += sarasas1[index++];
-    sum1 += sarasas1[index++];
+sum1 += sarasas1[index++];
+sum1 += sarasas1[index++];
+sum1 += sarasas1[index++];
+sum1 += sarasas1[index++];
+sum1 += sarasas1[index++];
 
 let index1 = 0;
 let sum2 = 0;
-    sum2 += sarasas2[index1++];
-    sum2 += sarasas2[index1++];
-    sum2 += sarasas2[index1++];
-    sum2 += sarasas2[index1++];
-    sum2 += sarasas2[index1++];
+sum2 += sarasas2[index1++];
+sum2 += sarasas2[index1++];
+sum2 += sarasas2[index1++];
+sum2 += sarasas2[index1++];
+sum2 += sarasas2[index1++];
 
 let index2 = 0;
 let sum3 = 0;
-    sum2 += sarasas3[index2++];
-    sum2 += sarasas3[index2++];
-    sum2 += sarasas3[index2++];
-    sum2 += sarasas3[index2++];
-    sum2 += sarasas3[index2++];
+sum2 += sarasas3[index2++];
+sum2 += sarasas3[index2++];
+sum2 += sarasas3[index2++];
+sum2 += sarasas3[index2++];
+sum2 += sarasas3[index2++];
 
 const sum = a + b + c + sum1 + sum2 + sum3;
 
@@ -86,32 +88,32 @@ console.log(sum);
 console.log(a1 + ' ' + a2 + ' ' + a3);
 
 let index5 = 0;
-    let summ1 = 0;
-    summ1 += sarasas1[index5++];
-    summ1 -= sarasas1[index5++];
-    summ1 += sarasas1[index5++];
-    summ1 -= sarasas1[index5++];
-    summ1 += sarasas1[index5++];
+let summ1 = 0;
+summ1 += sarasas1[index5++];
+summ1 -= sarasas1[index5++];
+summ1 += sarasas1[index5++];
+summ1 -= sarasas1[index5++];
+summ1 += sarasas1[index5++];
 
 console.log('1 Sarasas sum: ', summ1);
 
 let index6 = 0;
-    let summ2 = 0;
-    summ2 += sarasas2[index6++];
-    summ2 -= sarasas2[index6++];
-    summ2 += sarasas2[index6++];
-    summ2 -= sarasas2[index6++];
-    summ2 += sarasas2[index6++];
+let summ2 = 0;
+summ2 += sarasas2[index6++];
+summ2 -= sarasas2[index6++];
+summ2 += sarasas2[index6++];
+summ2 -= sarasas2[index6++];
+summ2 += sarasas2[index6++];
 
 console.log('2 Sarasas sum: ', summ2);
 
 let index7 = 0;
-    let summ3 = 0;
-    summ3 += sarasas3[index7++];
-    summ3 -= sarasas3[index7++];
-    summ3 += sarasas3[index7++];
-    summ3 -= sarasas3[index7++];
-    summ3 += sarasas3[index7++];
+let summ3 = 0;
+summ3 += sarasas3[index7++];
+summ3 -= sarasas3[index7++];
+summ3 += sarasas3[index7++];
+summ3 -= sarasas3[index7++];
+summ3 += sarasas3[index7++];
 
 console.log('3 Sarasas sum: ', summ3);
 
@@ -161,39 +163,39 @@ console.log();
 const jonasWeight = 55;
 const markasWeight = 75;
 
-if (jonasWeight > markasWeight){
+if (jonasWeight > markasWeight) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (jonasWeight < markasWeight){
+if (jonasWeight < markasWeight) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (jonasWeight === markasWeight){
+if (jonasWeight === markasWeight) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (jonasWeight !== markasWeight){
+if (jonasWeight !== markasWeight) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (jonasWeight >= markasWeight){
+if (jonasWeight >= markasWeight) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (jonasWeight <= markasWeight){
+if (jonasWeight <= markasWeight) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
@@ -205,39 +207,39 @@ const blueSum = blue.length;
 console.log(redSum);
 console.log(blueSum);
 
-if (redSum > blueSum){
+if (redSum > blueSum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (redSum < blue){
+if (redSum < blue) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (redSum === blueSum){
+if (redSum === blueSum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (redSum >= blueSum){
+if (redSum >= blueSum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (redSum <= blueSum){
+if (redSum <= blueSum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (redSum !== blueSum){
+if (redSum !== blueSum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
@@ -249,38 +251,123 @@ console.log(array10Sum);
 let array8Sum = array8.length;
 console.log(array8Sum);
 
-if (array10Sum > blueSum){
+if (array10Sum > blueSum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (array10Sum < array8Sum){
+if (array10Sum < array8Sum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (array10Sum === array8Sum){
+if (array10Sum === array8Sum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (array10Sum >= array8Sum){
+if (array10Sum >= array8Sum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (array10Sum <= array8Sum){
+if (array10Sum <= array8Sum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
 
-if (array10Sum !== array8Sum){
+if (array10Sum !== array8Sum) {
     console.log('Pomidoras');
-} else{
+} else {
     console.log('Bandykite kita kart');
 }
+
+/*
+Ciklo for panaudojimas
+
+Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
+    0 … 0
+    0 … 4
+    0 … 100
+    574 … 815
+    -50 … 50
+    -70 … 30
+panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
+    pvz.: “abcdef” -> “fedcba”
+Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
+    0 - 11
+    8 - 31
+    -18 - 18
+rezultatą pateikti tokiu formatu:
+    Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
+    Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
+    Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.
+*/
+
+console.clear();
+
+console.log();
+console.log('Ciklo for panaudojimas');
+console.log();
+
+const pirmasSkaicius = 574;
+const antrasSkaicius = 815;
+
+let cikloSum = 0;
+for (let i = pirmasSkaicius; i <= antrasSkaicius; i++) {
+    cikloSum += i;
+}
+console.log(cikloSum);
+
+console.log();
+
+const raides = 'abcdef';
+
+for (let i = 0; i < raides.length; i++) {
+    console.log(i, raides[i]);
+}
+
+console.log();
+/*
+for (let i = 0; i <= raides.length - 1; i++) {
+    console.log(i, raides[i]);
+}
+*/
+//reverse 
+
+for (let i = 0; i < raides.length; i++) {
+    console.log(i, raides[raides.length - 1 - i]);
+}
+
+/*
+for (let i = raides.length; i >= 0; i--) {
+    console.log(i, raides[i]);
+}
+*/
+
+console.log();
+
+const pirmasSkaicius1 = -18;
+const antrasSkaicius1 = 18;
+let dalmuo3 = 0;
+let dalmuo5 = 0;
+let dalmuo7 = 0;
+for (i = pirmasSkaicius1; i < antrasSkaicius1; i++) {
+    if (i % 3 == 0) {
+        dalmuo3++
+    }
+    if (i % 5 == 0) {
+        dalmuo5++
+    }
+    if (i % 7 == 0) {
+        dalmuo7++
+    }
+}
+console.log(`Skaičių intervale tarp ${pirmasSkaicius1} ir ${antrasSkaicius1}, besidalijančių be liekanos iš 3 yra ${dalmuo3} vienetai(-u).`)
+console.log(`Skaičių intervale tarp ${pirmasSkaicius1} ir ${antrasSkaicius1}, besidalijančių be liekanos iš 5 yra ${dalmuo5} vienetai(-u).`)
+console.log(`Skaičių intervale tarp ${pirmasSkaicius1} ir ${antrasSkaicius1}, besidalijančių be liekanos iš 7 yra ${dalmuo7} vienetai(-u).`)

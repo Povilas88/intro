@@ -115,11 +115,13 @@ let index7 = 0;
 
 console.log('3 Sarasas sum: ', summ3);
 
-const colors2 = colors.reverse();
-const trees2 = trees.reverse();
-const abc2 = abc.reverse();
+colors.reverse();
 
-const stringSum = colors2.join(', ') + ', ' + trees2.join(', ') + ', ' + abc2.join(', ');
+trees.reverse();
+
+abc.reverse();
+
+const stringSum = colors.join(', ') + ', ' + trees.join(', ') + ', ' + abc.join(', ');
 console.log(stringSum);
 
 /*

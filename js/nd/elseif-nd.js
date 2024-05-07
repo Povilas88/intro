@@ -58,3 +58,5 @@ if (markbmi > johnbmi) {
     const markHigherBMI = false;
     console.log('Boolean variable markHigherBMI: ',markHigherBMI);
 }
+
+//`Mark Bmi is ${markbmi}`

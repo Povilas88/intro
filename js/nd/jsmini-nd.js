@@ -357,7 +357,7 @@ const antrasSkaicius1 = 18;
 let dalmuo3 = 0;
 let dalmuo5 = 0;
 let dalmuo7 = 0;
-for (i = pirmasSkaicius1; i < antrasSkaicius1; i++) {
+for (let i = pirmasSkaicius1; i < antrasSkaicius1; i++) {
     if (i % 3 === 0) {
         dalmuo3++
     }
@@ -451,15 +451,38 @@ function isrinktiRaides(tekstas, raide) {
     }
     else {
         let alternate = tekstas;
-        for (i = raide; i < tekstas.length; i += raide) {
-            return console.log(alternate[i - 1])
+        for (i = raide; i <= tekstas.length; i += raide) {
+            alternate += i;
+            console.log((alternate[i - 1]))
         }
     }
 }
 
 isrinktiRaides('abcdefg', 2);
+console.log();
+isrinktiRaides('abcdefghijkl', 3);
+console.log();
 
-const str = "abcdefg";
-for (let i = 2; i < str.length; i += 2) {
-    console.log(str[i - 1]);
-};
+//console.clear();
+
+//6
+function dalyba(pirmas, antras) {
+    if (isNaN(pirmas) === true || isNaN(antras) === true) {
+        return console.log('Iveskite skaicius');
+    }
+    else if (pirmas === 0 || antras === 0) {
+        return console.log('Dalyba is 0 negalima');
+    }
+    else {
+        const atsakymas = pirmas / antras;
+        console.log(atsakymas);
+    }
+}
+
+dalyba('p', 2);
+dalyba('p', 'p');
+dalyba(20, 10);
+dalyba(20, 0);
+dalyba(45, 8);
+dalyba(0, 8);
+dalyba(0, 'p');

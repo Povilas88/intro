@@ -452,8 +452,8 @@ function isrinktiRaides(tekstas, raide) {
     else {
         let alternate = tekstas;
         for (i = raide; i <= tekstas.length; i += raide) {
-            alternate += i;
-            console.log((alternate[i - 1]))
+            process.stdout.write((alternate[i - 1]));
+            //console.log(alternate[i - 1]);
         }
     }
 }
@@ -462,7 +462,10 @@ isrinktiRaides('abcdefg', 2);
 console.log();
 isrinktiRaides('abcdefghijkl', 3);
 console.log();
-
+isrinktiRaides('abc', 0);
+isrinktiRaides('abc', 4);
+isrinktiRaides(1561, 2);
+console.log();
 //console.clear();
 
 //6

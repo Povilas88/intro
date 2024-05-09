@@ -452,7 +452,7 @@ function isrinktiRaides(tekstas, raide) {
     else {
         let alternate = tekstas;
         for (i = raide; i <= tekstas.length; i += raide) {
-            process.stdout.write((alternate[i - 1]));
+            process.stdout.write(alternate[i - 1]);
             //console.log(alternate[i - 1]);
         }
     }

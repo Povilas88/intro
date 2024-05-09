@@ -10,6 +10,25 @@ Boolean logikos operatoriai
 - || (or)
 - ! (not) 
 */
+/*
+string
+    - jei tuscias - false
+    - jei ne tuscias - true
+number
+    - jei nulis - false
+    - jei ne nulis 0 true
+    - jei NaN - false
+    - jei infinity - true
+    - jei -infinity - true
+array
+    - jei tuscias - false
+    - jei ne tuscias - true
+object
+    - jei tuscias - true
+    - jei ne tuscias - true
+undefined - false
+null - false
+*/
 
 const username = 'jonas';
 const age = 99;
@@ -49,295 +68,8 @@ console.log('>>>', willIGoTo2); // || or tinka nors vienas true
 
 console.clear();
 
-console.log(true && true);
-console.log(true && false);
-console.log(false && true);
-console.log(false && false);
-
-console.log(true || true);// true
-console.log(true || false);// true
-console.log(false || true);// true
-console.log(false || false);// false
-
-console.clear();
-console.log(true && true || false);// true && priority?
-console.log(true && false || true);//true
-console.log(true && false || false);//false
-
-console.log('------------');
-
-console.log(true || true && true);//true
-console.log(true || true && false);//false, nes pirmenybe && poto ||?
-
-console.log(!true); // false
-console.log(!false); // true
-
-console.clear();
-
-/*
-ND visas imanomas kombinacijos su 4 booleanais 128
-*/
-let a = 1;
-console.log(a,true && true && true && true);
-a += 1;
-console.log(a,true && true && true && false);
-a += 1;
-console.log(a,true && true && false && false);
-a += 1;
-console.log(a,true && false && false && false);
-a += 1;
-console.log(a,false && false && false && false);
-a += 1;
-console.log(a,false && true && true && true);
-a += 1;
-console.log(a,false && false && true && true);
-a += 1;
-console.log(a,false && false && false && true);
-a += 1;
-console.log(a,true && false && true && false);
-a += 1;
-console.log(a,false && true && false && true);
-a += 1;
-console.log(a,true && false && false && true);
-a += 1;
-console.log(a,false && true && true && false);
-a += 1;
-console.log(a,false && false && true && false);
-a += 1;
-console.log(a,false && true && false && false);
-a += 1;
-console.log(a,true && false && true && true);
-a += 1;
-console.log(a,true && true && false && true);
-// 16
-a += 1;
-console.log(a,true && true && true || true);
-a += 1;
-console.log(a,true && true && true || false);
-a += 1;
-console.log(a,true && true && false || false);
-a += 1;
-console.log(a,true && false && false || false);
-a += 1;
-console.log(a,false && false && false || false);
-a += 1;
-console.log(a,false && true && true || true);
-a += 1;
-console.log(a,false && false && true || true);
-a += 1;
-console.log(a,false && false && false || true);
-a += 1;
-console.log(a,true && false && true || false);
-a += 1;
-console.log(a,false && true && false || true);
-a += 1;
-console.log(a,true && false && false || true);
-a += 1;
-console.log(a,false && true && true || false);
-a += 1;
-console.log(a,false && false && true || false);
-a += 1;
-console.log(a,false && true && false || false);
-a += 1;
-console.log(a,true && false && true || true);
-a += 1;
-console.log(a,true && true && false || true);
-// 32
-a += 1;
-console.log(a,true && true || true && true);
-a += 1;
-console.log(a,true && true || true && false);
-a += 1;
-console.log(a,true && true || false && false);
-a += 1;
-console.log(a,true && false || false && false);
-a += 1;
-console.log(a,false && false || false && false);
-a += 1;
-console.log(a,false && true || true && true);
-a += 1;
-console.log(a,false && false || true && true);
-a += 1;
-console.log(a,false && false || false && true);
-a += 1;
-console.log(a,true && false || true && false);
-a += 1;
-console.log(a,false && true || false && true);
-a += 1;
-console.log(a,true && false || false && true);
-a += 1;
-console.log(a,false && true || true && false);
-a += 1;
-console.log(a,false && false || true && false);
-a += 1;
-console.log(a,false && true || false && false);
-a += 1;
-console.log(a,true && false || true && true);
-a += 1;
-console.log(a,true && true || false && true);
-// 48
-a += 1;
-console.log(a,true || true && true && true);
-a += 1;
-console.log(a,true || true && true && false);
-a += 1;
-console.log(a,true || true && false && false);
-a += 1;
-console.log(a,true || false && false && false);
-a += 1;
-console.log(a,false || false && false && false);
-a += 1;
-console.log(a,false || true && true && true);
-a += 1;
-console.log(a,false || false && true && true);
-a += 1;
-console.log(a,false || false && false && true);
-a += 1;
-console.log(a,true || false && true && false);
-a += 1;
-console.log(a,false || true && false && true);
-a += 1;
-console.log(a,true || false && false && true);
-a += 1;
-console.log(a,false || true && true && false);
-a += 1;
-console.log(a,false || false && true && false);
-a += 1;
-console.log(a,false || true && false && false);
-a += 1;
-console.log(a,true || false && true && true);
-a += 1;
-console.log(a,true || true && false && true);
-// 64
-a += 1;
-console.log(a,true && true || true || true);
-a += 1;
-console.log(a,true && true || true || false);
-a += 1;
-console.log(a,true && true || false || false);
-a += 1;
-console.log(a,true && false || false || false);
-a += 1;
-console.log(a,false && false || false || false);
-a += 1;
-console.log(a,false && true || true || true);
-a += 1;
-console.log(a,false && false || true || true);
-a += 1;
-console.log(a,false && false || false || true);
-a += 1;
-console.log(a,true && false || true || false);
-a += 1;
-console.log(a,false && true || false || true);
-a += 1;
-console.log(a,true && false || false || true);
-a += 1;
-console.log(a,false && true || true || false);
-a += 1;
-console.log(a,false && false || true || false);
-a += 1;
-console.log(a,false && true || false || false);
-a += 1;
-console.log(a,true && false || true || true);
-a += 1;
-console.log(a,true && true || false || true);
-// 80
-a += 1;
-console.log(a,true || true || true && true);
-a += 1;
-console.log(a,true || true || true && false);
-a += 1;
-console.log(a,true || true || false && false);
-a += 1;
-console.log(a,true || false || false && false);
-a += 1;
-console.log(a,false || false || false && false);
-a += 1;
-console.log(a,false || true || true && true);
-a += 1;
-console.log(a,false || false || true && true);
-a += 1;
-console.log(a,false || false || false && true);
-a += 1;
-console.log(a,true || false || true && false);
-a += 1;
-console.log(a,false || true || false && true);
-a += 1;
-console.log(a,true || false || false && true);
-a += 1;
-console.log(a,false || true || true && false);
-a += 1;
-console.log(a,false || false || true && false);
-a += 1;
-console.log(a,false || true || false && false);
-a += 1;
-console.log(a,true || false || true && true);
-a += 1;
-console.log(a,true || true || false && true);
-// 96
-a += 1;
-console.log(a,true || true && true || true);
-a += 1;
-console.log(a,true || true && true || false);
-a += 1;
-console.log(a,true || true && false || false);
-a += 1;
-console.log(a,true || false && false || false);
-a += 1;
-console.log(a,false || false && false || false);
-a += 1;
-console.log(a,false || true && true || true);
-a += 1;
-console.log(a,false || false && true || true);
-a += 1;
-console.log(a,false || false && false || true);
-a += 1;
-console.log(a,true || false && true || false);
-a += 1;
-console.log(a,false || true && false || true);
-a += 1;
-console.log(a,true || false && false || true);
-a += 1;
-console.log(a,false || true && true || false);
-a += 1;
-console.log(a,false || false && true || false);
-a += 1;
-console.log(a,false || true && false || false);
-a += 1;
-console.log(a,true || false && true || true);
-a += 1;
-console.log(a,true || true && false || true);
-// 112
-a += 1;
-console.log(a,true || true || true || true);
-a += 1;
-console.log(a,true || true || true || false);
-a += 1;
-console.log(a,true || true || false || false);
-a += 1;
-console.log(a,true || false || false || false);
-a += 1;
-console.log(a,false || false || false || false);
-a += 1;
-console.log(a,false || true || true || true);
-a += 1;
-console.log(a,false || false || true || true);
-a += 1;
-console.log(a,false || false || false || true);
-a += 1;
-console.log(a,true || false || true || false);
-a += 1;
-console.log(a,false || true || false || true);
-a += 1;
-console.log(a,true || false || false || true);
-a += 1;
-console.log(a,false || true || true || false);
-a += 1;
-console.log(a,false || false || true || false);
-a += 1;
-console.log(a,false || true || false || false);
-a += 1;
-console.log(a,true || false || true || true);
-a += 1;
-console.log(a,true || true || false || true);
-//128
+if (21526) {
+    console.log(true);
+} else {
+    console.log(false);
+}

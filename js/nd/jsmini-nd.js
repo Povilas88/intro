@@ -399,7 +399,7 @@ function skaitmenuKiekisSkaiciuje(skaicius) {
     if (isNaN(skaicius)) {
         return console.log('Pateikta netinkamo tipo reikšmė');
     }
-    const kiekis = skaicius.length;
+    const kiekis = skaicius.length;// kiekis = '' + n; ('2')
     return console.log(kiekis);
 
 }

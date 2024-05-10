@@ -393,20 +393,31 @@ console.log(daugyba(6, -9));
 console.log(daugyba(0, 9));
 
 console.log();
-
+console.clear();
 //3
 function skaitmenuKiekisSkaiciuje(skaicius) {
-    if (isNaN(skaicius)) {
+    if (isNaN(skaicius) === true) {
         return console.log('Pateikta netinkamo tipo reikšmė');
+    } else if (typeof skaicius === NaN) {
+        return console.log('Pateikta netinkamo tipo reikšmė');
+    } else if (skaicius === true) {
+        return console.log('Pateikta netinkamo tipo reikšmė');
+    } else if (skaicius === Infinity) {
+        return console.log('Pateikta netinkamo tipo reikšmė');
+    } else {
+        const kiekis = skaicius.toString().length
+        return console.log(kiekis);
     }
-    const kiekis = skaicius.length;// kiekis = '' + n; ('2')
-    return console.log(kiekis);
-
 }
-skaitmenuKiekisSkaiciuje('781');
-skaitmenuKiekisSkaiciuje('abcd');
-skaitmenuKiekisSkaiciuje('49875');
+skaitmenuKiekisSkaiciuje(5);
+skaitmenuKiekisSkaiciuje(781);
+skaitmenuKiekisSkaiciuje(37060123456);
+skaitmenuKiekisSkaiciuje(true);
+skaitmenuKiekisSkaiciuje('asd');
+skaitmenuKiekisSkaiciuje(NaN);
+skaitmenuKiekisSkaiciuje(Infinity);
 
+console.log();
 console.log();
 
 //4 isarray true

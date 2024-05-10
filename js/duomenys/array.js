@@ -98,3 +98,18 @@ console.log(marksAverage(jonoPazymiai));
 jonoPazymiai.push(8);
 console.log(jonoPazymiai);
 console.log(marksAverage(jonoPazymiai));
+
+console.clear();
+
+const array = [1, 5, 11, -1, 20, 32]
+
+function biggestNumber(arr) {
+    let biggest = arr[0]//pirmas array indexas, kintanti reiksme
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > biggest) {
+            biggest = arr[i] //biggest lygus naujajam skaiciui
+        }
+    }
+    return console.log(biggest);
+}
+biggestNumber(array)

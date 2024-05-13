@@ -396,13 +396,7 @@ console.log();
 console.clear();
 //3
 function skaitmenuKiekisSkaiciuje(skaicius) {
-    if (isNaN(skaicius) === true) {
-        return console.log('Pateikta netinkamo tipo reikšmė');
-    } else if (typeof skaicius === NaN) {
-        return console.log('Pateikta netinkamo tipo reikšmė');
-    } else if (skaicius === true) {
-        return console.log('Pateikta netinkamo tipo reikšmė');
-    } else if (skaicius === Infinity) {
+    if (typeof skaicius !== 'number') {
         return console.log('Pateikta netinkamo tipo reikšmė');
     } else {
         const kiekis = skaicius.toString().length
@@ -416,6 +410,7 @@ skaitmenuKiekisSkaiciuje(true);
 skaitmenuKiekisSkaiciuje('asd');
 skaitmenuKiekisSkaiciuje(NaN);
 skaitmenuKiekisSkaiciuje(Infinity);
+skaitmenuKiekisSkaiciuje([]);
 
 console.log();
 console.log();

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "for": "node --watch ./js/ciklai/for.js",
+    "cw1": "node --watch ./js/cw/cw1.js",
     "array": "node --watch ./js/duomenys/array.js",
     "boolean": "node --watch ./js/duomenys/boolean.js",
     "typeof": "node --watch ./js/duomenys/typeof.js",

@@ -10,6 +10,7 @@
     "typeof": "node --watch ./js/duomenys/typeof.js",
     "string": "node --watch ./js/duomenys/string.js", 
     "number": "node --watch ./js/duomenys/number.js",
+    "m-number": "node --watch ./js/metodai/m-number.js",
     "function": "node --watch ./js/funkcijos/function.js",
     "if": "node --watch ./js/palyginimas/if.js",
     "piniginestring-nd": "node --watch ./js/nd/piniginestring-nd.js",

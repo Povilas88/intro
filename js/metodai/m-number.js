@@ -11,6 +11,7 @@ console.log(Number.isFinite(-15.3659));
 console.log(Number.isFinite(Infinity));
 console.log(Number.isFinite(-Infinity));
 console.log(Number.isFinite(NaN));
+console.log(Number.isFinite(true));
 console.log(Number.isFinite(null));// nera number
 
 console.log('---------------');

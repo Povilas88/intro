@@ -73,3 +73,24 @@ console.log(countSheeps([true]));
 console.log(countSheeps([undefined, null, false, true]));
 console.log(countSheeps([undefined, null, false, true, true, false, null, undefined]));
 console.log(countSheeps([true, true, true, false, true, true, true, true, true, false, true, false, true, false, false, true, true, true, true, true, false, false, true, true]));
+
+/*
+"apple ban" --> ["apple 5", "ban 3"]
+"you will win" -->["you 3", "will 4", "win 3"]
+*/
+console.clear();
+
+function addLength(str) {
+    const words = str.split(" ");
+    const length = words.map((w) => w.length);
+    const finalArray = [];
+    for (let i = 0; i < words.length; i++) {
+        finalArray.push(words[i] + ' ' + length[i]);
+    }
+    return finalArray;
+}
+function addLength2(str) {
+    return str.split(" ").map(word => `${word} ${word.length}`)
+}
+console.log(addLength('apple ban'));
+console.log(addLength2('you will win'));

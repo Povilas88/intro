@@ -57,3 +57,19 @@ console.log(squareSum([0, 3, 4, 5]));
 //         return (n * n) + sum;
 //     }, 0)
 // }
+console.log();
+
+//boolean filter true
+function countSheeps(sheep) {
+    const trueCount = sheep.filter(Boolean).length
+    return trueCount;
+}
+
+console.log(countSheeps([[]]));
+console.log(countSheeps([undefined]));
+console.log(countSheeps([null]));
+console.log(countSheeps([false]));
+console.log(countSheeps([true]));
+console.log(countSheeps([undefined, null, false, true]));
+console.log(countSheeps([undefined, null, false, true, true, false, null, undefined]));
+console.log(countSheeps([true, true, true, false, true, true, true, true, true, false, true, false, true, false, false, true, true, true, true, true, false, false, true, true]));

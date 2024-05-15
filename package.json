@@ -18,6 +18,8 @@
     "if": "node --watch ./js/palyginimas/if.js",
     "piniginestring-nd": "node --watch ./js/nd/piniginestring-nd.js",
     "boolean-nd": "node --watch ./js/nd/boolean-nd.js",
+    "clock-nd": "node --watch ./js/nd/clock-nd.js",
+    "matrix-nd": "node --watch ./js/nd/matrix-nd.js",
     "elseif-nd": "node --watch ./js/nd/elseif-nd.js",
     "name-date-nd": "node --watch ./js/nd/name-date-nd.js",
     "jsmini-nd": "node --watch ./js/nd/jsmini-nd.js", 

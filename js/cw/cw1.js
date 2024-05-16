@@ -109,3 +109,63 @@ function positiveSum(arr) {
 
 console.log(positiveSum([1, -2, 3, 4, 5]))
 console.log(positiveSum([]))
+console.clear();
+
+//string split
+function solution(str) {
+    let result = [];
+    if (str.length % 2 !== 0) {
+        str += '_';
+    } for (let i = 0; i < str.length; i += 2) {
+        result.push(str.substring(i, i + 2));
+    }
+    return result
+}
+console.log(solution("abcdef"));
+console.log(solution("abcdefg"));
+
+//reverse word
+function solution1(str) {
+    let words = str.split('')
+    return words.reverse().join('')
+}
+console.log(solution1('world'));
+
+console.clear()
+
+//unique in order + split
+var uniqueInOrder = function (iterable) {
+    let results = '';
+    if (typeof iterable === 'string') {
+        for (let i = 0; i < iterable.length; i++) {
+            if (iterable[i] !== iterable[i + 1])
+                results += iterable[i];
+        } return results.split('');
+    } else if (!iterable.some(i => !Number.isInteger(i))) {
+        for (let i = 0; i < iterable.length; i++) {
+            if (iterable[i] !== iterable[i + 1])
+                results += iterable[i];
+        } return results.split('').map(Number);
+    } else if (!iterable.some(i => !Number.isInteger(i)) === false) {
+        for (let i = 0; i < iterable.length; i++) {
+            if (iterable[i] !== iterable[i + 1])
+                results += iterable[i];
+        } return results.split('');
+    }
+}
+// let x = [123, 234, 345];
+// let y = [123, 'invalid', 345];
+// let z = [123, 234.5, 345];
+// !x.some(i => !Number.isInteger(i))  // true
+// !y.some(i => !Number.isInteger(i))  // false
+// !z.some(i => !Number.isInteger(i))  // false
+
+/*
+var uniqueInOrder = function (iterable) {
+    return [...iterable].filter((a, i) => a !== iterable[i - 1])
+}
+*/
+
+console.log(uniqueInOrder('AAAABBBCCDAABBB'))
+console.log(uniqueInOrder([1, 2, 2, 3, 3]))
+console.log(uniqueInOrder(['a', 'b']))

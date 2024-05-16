@@ -15,6 +15,7 @@
     "m-number": "node --watch ./js/metodai/m-number.js",
     "m-string": "node --watch ./js/metodai/m-string.js",
     "function": "node --watch ./js/funkcijos/function.js",
+    "arrow": "node --watch ./js/funkcijos/arrow.js",
     "if": "node --watch ./js/palyginimas/if.js",
     "piniginestring-nd": "node --watch ./js/nd/piniginestring-nd.js",
     "boolean-nd": "node --watch ./js/nd/boolean-nd.js",

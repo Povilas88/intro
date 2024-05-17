@@ -14,7 +14,7 @@ function arrayPlusArray(arr1, arr2) {
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
 
 console.log();
-
+console.log('------------');
 // convertina numbers i array
 function rowSumOddNumbers(n) {
     let sum = 0;
@@ -40,6 +40,7 @@ console.log(shortestWord('bitcoin take over the world maybe who knows perhaps'))
 console.log(shortestWord("Let's travel abroad shall we"));
 
 console.clear();
+console.log('------------');
 //Square(n) Sum
 function squareSum(numbers) {
     let sum = 0;
@@ -79,7 +80,7 @@ console.log(countSheeps([true, true, true, false, true, true, true, true, true, 
 "you will win" -->["you 3", "will 4", "win 3"]
 */
 console.clear();
-
+console.log('------------');
 function addLength(str) {
     const words = str.split(" ");
     const length = words.map((w) => w.length);
@@ -96,6 +97,7 @@ console.log(addLength('apple ban'));
 console.log(addLength2('you will win'));
 
 console.clear()
+console.log('------------');
 //sum positives
 function positiveSum(arr) {
     let results = 0;
@@ -110,7 +112,7 @@ function positiveSum(arr) {
 console.log(positiveSum([1, -2, 3, 4, 5]))
 console.log(positiveSum([]))
 console.clear();
-
+console.log('------------');
 //string split
 function solution(str) {
     let result = [];
@@ -132,7 +134,7 @@ function solution1(str) {
 console.log(solution1('world'));
 
 console.clear()
-
+console.log('------------');
 //unique in order + split
 var uniqueInOrder = function (iterable) {
     let results = '';
@@ -169,3 +171,85 @@ var uniqueInOrder = function (iterable) {
 console.log(uniqueInOrder('AAAABBBCCDAABBB'))
 console.log(uniqueInOrder([1, 2, 2, 3, 3]))
 console.log(uniqueInOrder(['a', 'b']))
+console.log('------------');
+//Enumerable Magic #4 - True for None?
+function none(arr, fun) {
+    return !arr.some(fun)
+}
+console.log(none([1, 2, 3, 4, 5], function (item) { return item > 5 }), true)
+console.log(none([1, 2, 3, 4, 5], function (item) { return item > 4 }), false)
+console.log('------------');
+//Convert number to reversed array of digits
+function digitize(n) {
+    let array = n.toString().split('');
+    let reverse = array.reverse();
+    return reverse.map(Number)
+}
+//return String(n).split('').map(Number).reverse()
+console.log(digitize(35231), [1, 3, 2, 5, 3]);
+console.log(digitize(0), [0]);
+console.log('------------');
+//get character from ASCII Value
+function getChar(c) {
+    return String.fromCharCode(c)
+}
+console.log(getChar(55));
+
+console.clear()
+console.log('------------');
+//What is between?
+function between(a, b) {
+    let array = [];
+    for (let i = a; i <= b; i++) {
+        array += i + ' ';
+    }
+    return array.split(' ').map(Number).slice(0, -1)
+}
+/*
+function between(a, b) {
+  // your code here
+  arr = []
+  for(i = a;i <= b; i++){ 
+      arr.push(i)
+  }
+  return arr
+}
+*/
+console.log(between(1, 4));
+console.log(between(-2, 2));
+
+console.clear();
+console.log('------------');
+//Number of People in the Bus
+var number = function (busStops) {
+    let peopleOnBus = 0;
+    for (let i = 0; i < busStops.length; i++) {
+        peopleOnBus += busStops[i][0] - busStops[i][1];
+    }
+    return peopleOnBus
+}
+console.log(number([[10, 0], [3, 5], [5, 8]])); //5
+console.log(number([[3, 0], [9, 1], [4, 10], [12, 2], [6, 1], [7, 10]])); //17
+console.log(number([[3, 0], [9, 1], [4, 8], [12, 2], [6, 1], [7, 8]])) //21
+console.log(number([[0, 0]])) //0
+
+console.clear();
+console.log('The Hashtag Generator');
+console.log();
+
+//The Hashtag Generator
+function generateHashtag(str) {
+    let words = str.split(' ')
+    let upper = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+    if (words.join('').length >= 140 || words.join('').length === 0) {
+        return false;
+    } for (let i = 0; i < words.length; i++) {
+        words[i] += '';
+    } return '#' + upper.join('');
+}
+
+console.log(generateHashtag("Do We have A Hashtag"))
+console.log(generateHashtag("code" + " ".repeat(140) + "wars"))//"#CodeWars"
+
+console.log();
+

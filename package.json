@@ -25,6 +25,7 @@
     "ternary": "node --watch ./js/palyginimas/ternary.js",
     "piniginestring-nd": "node --watch ./js/nd/piniginestring-nd.js",
     "boolean-nd": "node --watch ./js/nd/boolean-nd.js",
+    "random-nd": "node --watch ./js/nd/random-nd.js",
     "clock-nd": "node --watch ./js/nd/clock-nd.js",
     "matrix-nd": "node --watch ./js/nd/matrix-nd.js",
     "elseif-nd": "node --watch ./js/nd/elseif-nd.js",

@@ -92,3 +92,20 @@ console.log(likes([])),// 'no one likes this');
     console.log(likes(['Jacob', 'Alex'])),// 'Jacob and Alex like this');
     console.log(likes(['Max', 'John', 'Mark'])),// 'Max, John and Mark like this');
     console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']))// 'Alex, Jacob and 2 others like this');
+
+//No zeros for heros
+console.log('\nNo zeros for heros\n');
+function noBoringZeros(n) {
+    let number = n.toString()
+    for (let i = 0; i < 10; i++) {
+        if (number.endsWith('0') && n !== 0) {
+            number = number.slice(0, -1)
+        }
+    }
+    return number
+}
+
+console.log(noBoringZeros(1450))
+console.log(noBoringZeros(960000))
+console.log(noBoringZeros(-1050))
+console.log(noBoringZeros(0))

@@ -80,3 +80,30 @@ function solution(number) {
 }
 
 console.log(solution(10));
+
+//Stop gninnipS My sdroW!
+console.log('\nStop gninnipS My sdroW!\n');
+function spinWords(string) {
+    let array = string.split(' ')
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length >= 5) {
+            array[i] = array[i].split("").reverse().join("");
+        }
+    }
+    return array.join(' ')
+}
+console.log(spinWords("Welcome")) // --> "emocleW"
+console.log(spinWords("Hey fellow warriors")) // --> "Hey wollef sroirraw"
+
+//esreveR
+console.log('\nesreveR\n');
+function reverse(array) {
+    let result = [];
+    for (let i = array.length - 1; i >= 0; i--) {
+        result.push(array[i]);
+    }
+    return result
+}
+
+console.log(reverse([1, 2, 3]))
+console.log(reverse([1, null, 14, "two"]))

@@ -18,6 +18,7 @@
     "m-array": "node --watch ./js/metodai/m-array.js",
     "m-number": "node --watch ./js/metodai/m-number.js",
     "m-string": "node --watch ./js/metodai/m-string.js",
+    "destructuring": "node --watch ./js/metodai/destructuring.js",
     "math": "node --watch ./js/metodai/math.js",
     "random": "node --watch ./js/metodai/random.js",
     "spread": "node --watch ./js/metodai/spread.js",

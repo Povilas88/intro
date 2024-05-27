@@ -79,3 +79,42 @@ function halvingSum(n) {
 }
 console.log(halvingSum(25));
 
+//Training JS #18: Methods of String object--concat() split() and its good friend join()
+console.log('\nTraining JS #18: Methods of String object--concat() split() and its good friend join()\n');
+function splitAndMerge(string, separator) {
+    let arr = []
+    const a = string.split(' ');
+    for (let i = 0; i < a.length; i++) {
+        a[i] = a[i].split('').join(separator)
+        arr.push(a[i]);
+    }
+    return arr.join(' ');
+}
+
+console.log(splitAndMerge("My name is John", " "));
+console.log(splitAndMerge("My name is John", "-"));
+
+//Training JS #29: methods of arrayObject---concat() and join()
+console.log('\nTraining JS #29: methods of arrayObject---concat() and join()\n');
+function bigToSmall(arr) {
+    const sort = arr.flat().sort(function (a, b) { return b - a });//descending sort array
+    //arr.sort(function (a, b) { return a - b }); ascending sort array
+
+    return sort.join('>')
+}
+
+console.log((bigToSmall([[1, 2], [3, 4], [5, 6]]), "6>5>4>3>2>1"));
+
+//Convert A Hex String To RGB
+console.log('\nConvert A Hex String To RGB\n');
+function hexStringToRGB(hexString) {
+    hexString = hexString.replace('#', '')
+
+    const r = parseInt(hexString.substring(0, 2), 16)
+    const g = parseInt(hexString.substring(2, 4), 16)
+    const b = parseInt(hexString.substring(4, 6), 16)
+
+    return { r, g, b }
+}
+
+console.log(hexStringToRGB('ff9933'));

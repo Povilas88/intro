@@ -143,3 +143,27 @@ multiplicationTable = function (size) {
 }
 
 console.log(multiplicationTable(3));
+
+//What's A Name In?
+console.log("\nWhat's A Name In ?\n");
+function nameInStr(str, name) {
+    let str1 = str.toLowerCase().replaceAll(' ', '');
+    let str2 = name.toLowerCase();
+    let index = 0;
+
+    for (let i = 0; i < str1.length; i++) {
+        if (str1[i] === str2[index]) {
+            index++;
+        }
+        if (index === str2.length) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(nameInStr('Across the rivers', 'chris'))
+console.log(nameInStr('Next to a lake', 'chris'))
+console.log(nameInStr('Under a sea', 'chris'))
+console.log(nameInStr('A crew that boards the ship', 'chris'))
+console.log(nameInStr('A live son', 'Allison'))

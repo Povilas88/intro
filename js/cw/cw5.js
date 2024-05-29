@@ -126,3 +126,20 @@ function toCamelCase(str){
   return str.replace(/[-_](.)/g, (_, c) => c.toUpperCase());
 }
 */
+
+//Multiplication table
+console.log('\nMultiplication table\n');
+multiplicationTable = function (size) {
+    let result = [];
+
+    for (let i = 1; i <= size; i++) {
+        let row = [];
+        for (let j = 1; j <= size; j++) {
+            row.push(j * i);
+        }
+        result.push(row);
+    }
+    return result;
+}
+
+console.log(multiplicationTable(3));

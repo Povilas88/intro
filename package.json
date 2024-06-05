@@ -42,6 +42,8 @@
     "elseif-nd": "node --watch ./js/nd/elseif-nd.js",
     "name-date-nd": "node --watch ./js/nd/name-date-nd.js",
     "jsmini-nd": "node --watch ./js/nd/jsmini-nd.js",
+    "d3": "node --watch ./js/qa/d3.js",
+    "new-methods": "node --watch ./js/qa/new-methods.js",
     "w1": "node --watch ./js/workshop/ws1.js",
     "eval": "node --watch ./js/nd/eval.js",  
     "test": "echo \"Error: no test specified\" && exit 1"

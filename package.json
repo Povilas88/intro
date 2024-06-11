@@ -49,6 +49,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Povilas (https://github.com/Povilas88)",
+  "license": "MIT"
 }

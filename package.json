@@ -12,6 +12,7 @@
     "cw4": "node --watch ./js/cw/cw4.js",
     "cw5": "node --watch ./js/cw/cw5.js",
     "cw6": "node --watch ./js/cw/cw6.js",
+    "string-incrementer": "node --watch ./js/cw/string-incrementer.js",
     "cwtest": "node --watch ./js/cw/cwtest.js",
     "polish": "node --watch ./js/cw/polish.js",
     "well": "node --watch ./cw/well.js",
